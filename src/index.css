@@ -29,10 +29,24 @@ h1.title {
     padding: 7px;
 
     div.pickerHeader {
+      button {
+        border-color: #2596be;
+        &:hover:enabled {
+          background-color: #2596be;
+          color: white;
+        }
+      }
       margin-bottom: 20px;
     }
 
     div.pickerFooter {
+      button {
+        border-color: #2596be;
+        &:hover:enabled {
+          background-color: #2596be;
+          color: white;
+        }
+      }
       margin-top: 20px;
       text-align: right;
     }
@@ -58,7 +72,7 @@ h1.title {
       border-color: #04AA6D;
       border-radius: 5px;
       background: white;
-      color: #04AA6D;
+      color: black;
       text-align: center;
       text-decoration: none;
       display: inline-block;
