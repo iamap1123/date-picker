@@ -11,8 +11,8 @@ function App () {
   }
 
   const DatePickerProps = {
-    value: '',                // Default selected date
-    selected: eventSelected   // Sselected event when confirm
+    value: '',                // Default selected date: String
+    selected: eventSelected   // Sselected event: String | undefined
   }
 
   return (
