@@ -7,7 +7,7 @@ function App () {
 
   // Selected event
   const eventSelected = (date) => {
-    alert("Confirm selected: " + date);
+    alert("Selected: " + date);
   }
 
   const DatePickerProps = {
