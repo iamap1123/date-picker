@@ -48,6 +48,7 @@ export default function DatePicker ({prop}) {
     toggleResult(false);
     togglePickerView(false);
     setSelectedValue(formatDate(year, month, day));
+    prop.selected(undefined);
   }
 
   const handleSelected = () => {
