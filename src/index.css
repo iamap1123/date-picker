@@ -11,3 +11,87 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1.title {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.DatePicker {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+
+  div.Picker {
+    border: 1px solid;
+    border-color: #04AA6D;
+    border-radius: 5px;
+    padding: 7px;
+
+    div.pickerHeader {
+      margin-bottom: 20px;
+    }
+
+    div.pickerFooter {
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    table.day {
+      width: 300px;
+      border: none;
+      border-radius: 3px;
+      border-spacing: 6px;
+      text-align: center;
+    }
+
+    table.year, table.month {
+      width: 60%;
+      border: none;
+      border-radius: 3px;
+      border-spacing: 6px;
+      text-align: center;
+    }
+
+    button {
+      border: 1px solid;
+      border-color: #04AA6D;
+      border-radius: 5px;
+      background: white;
+      color: #04AA6D;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0px;
+      height: 25px;
+      cursor: pointer;
+      box-shadow: 0;
+      transition: ease background-color 250ms;
+      outline: none;
+      &:hover:enabled {
+        background-color: #04AA6D;
+        color: white;
+      }
+      &:active {
+        background-color: #2fc58e;
+        color: white;
+      }
+      &:disabled {
+        cursor: not-allowed;
+        background-color: white;
+        color: #c6ccca;
+        border-color: #c6ccca;
+      }
+    }
+
+    button.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+  }
+
+  .resultInput {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}

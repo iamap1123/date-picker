@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import DatePicker from './Components/DatePicker';
 
-function App() {
+
+function App () {
+  const eventSelected = (date) => {
+    alert("Confirm selected: " + date);
+  }
+
+  const DatePickerProps = {
+    value: '',
+    selected: eventSelected
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className="title">DatePicker</h1>
+      <DatePicker prop={DatePickerProps} />
     </div>
-  );
+  )
 }
 
 export default App;
