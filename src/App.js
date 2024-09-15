@@ -4,13 +4,15 @@ import DatePicker from './Components/DatePicker';
 
 
 function App () {
+
+  // Selected event
   const eventSelected = (date) => {
     alert("Confirm selected: " + date);
   }
 
   const DatePickerProps = {
-    value: '',
-    selected: eventSelected
+    value: '',                // Default selected date
+    selected: eventSelected   // Sselected event when confirm
   }
 
   return (
